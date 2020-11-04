@@ -19,7 +19,7 @@ client.once("ready", () => {
     setInterval(() => {
 		setStatus()
     }, 60000);
-    if(!config.logChannel)
+    if(!config.logChannel)return;
 	client.channels.fetch(config.logChannel, true).then(channel => {
 		let startupEmbed = new Discord.MessageEmbed()
 		.setDescription(`✅ **Bot started**\nGuilds: ${client.guilds.cache.size}`)
@@ -28,7 +28,7 @@ client.once("ready", () => {
 })
 
 client.on("guildCreate", guild => {
-    if(!config.logChannel)
+    if(!config.logChannel)return;
 	client.channels.fetch(config.logChannel, true).then(channel => {
 		let joinedGuildEmbed = new Discord.MessageEmbed()
 		.setDescription(`📥 **Joined Guild**\nName: ${guild.name}\nID: ${guild.id}`)
