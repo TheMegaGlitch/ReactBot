@@ -119,6 +119,7 @@ function getUser(reaction, user, action = "none"){
 
 client.on("messageReactionAdd", (reaction, user) => {
 	try{
+        if(user.bot == true)return
 		reaction.fetch().then(fetchedReaction => {
 			return getUser(reaction, user, "addrole")
 		})
@@ -129,6 +130,7 @@ client.on("messageReactionAdd", (reaction, user) => {
 
 client.on("messageReactionRemove", (reaction, user) => {
 	try{
+        if(user.bot == true)return
 		reaction.fetch().then(fetchedReaction => {
 			return getUser(reaction, user, "removerole")
 		})
