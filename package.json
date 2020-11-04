@@ -1,0 +1,23 @@
+{
+  "name": "react-bot",
+  "version": "1.0.0",
+  "description": "A simple reaction role Discord bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Justice-Bots-Devs/ReactBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Justice-Bots-Devs/ReactBot/issues"
+  },
+  "homepage": "https://github.com/Justice-Bots-Devs/ReactBot#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  }
+}
