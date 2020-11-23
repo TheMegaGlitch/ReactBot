@@ -6,7 +6,7 @@ You should create a `config.json` and it should have the following:
 {
   "prefix":"!",
   "token":"BOT_TOKEN_HERE",
-  "logChannel:"",
+  "logChannel":"",
   "staff":[]
 }
 ```
