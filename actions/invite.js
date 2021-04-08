@@ -5,7 +5,7 @@ module.exports = {
 	usage: '',
 	async execute(message = new Discord.Message(), args = new Array(), client = new Discord.Client()) {
 		const inviteEmbed = new Discord.MessageEmbed()
-        .setDescription(`Here's my [invite link](https://discord.com/api/oauth2/authorize?client_id=757493290248699904&permissions=268774464&scope=bot)!`)
+        .setDescription(`Here's my [invite link](https://discord.com/api/oauth2/authorize?client_id=822292321331576853&permissions=268512320&scope=bot)!`)
         return message.channel.send(inviteEmbed)
 	},
 };
